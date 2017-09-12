@@ -39,6 +39,9 @@
   <!-- Tile icon for Win8 -->
   <meta name="msapplication-TileColor" content="#3372DF">
   <meta name="msapplication-navbutton-color" content="#303F9F">
+  
+  <meta name="google-signin-client_id" content="223779128027-b1vlbfb9o7e8fp6jjc9ntbguhj0ud6tr.apps.googleusercontent.com">
+
 
   <!-- Material Design Lite -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -117,6 +120,10 @@
 <!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
 
 
+<!--for the google sign in button -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
 <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -131,11 +138,7 @@
   firebase.initializeApp(config);
 </script>
 
-<!--for the google sign in button -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="223779128027-b1vlbfb9o7e8fp6jjc9ntbguhj0ud6tr.apps.googleusercontent.com">
-
-
+<script>
 function onSignIn(googleUser) {
 console.log('User signed in.===000===');
   var profile = googleUser.getBasicProfile();
@@ -144,6 +147,7 @@ console.log('User signed in.===000===');
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
+</script>
 
 <a href="#" onclick="signOut();">Sign out</a>
 <script>
