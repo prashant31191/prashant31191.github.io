@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/lib/jquery/1.9.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <button class="button" type="button"><a href="index.html">submit data</a></button>
+    <script>
+        // retrieve emails to firebase
+        var myFirebaseRef = new Firebase(firebase link goeas here);
+        myFirebaseRef.on('child_added', function(snapshot) {
+            var formdata = snapshot.val();
+            displayFormData(formdata.email);
+        })
+
+        function displayFormData(email, Text) {
+            $('<div/>').text(Text).prepend($('<em/>').text(email + ': '))
+                .appendTo($('#dbemail'));
+        };
+
+    </script>
+    <div id="dbemail"></div>
+</body>
+
+</html>

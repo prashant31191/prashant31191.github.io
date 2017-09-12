@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+</head>
+
+<body>
+
+    <button class="button" type="button"><a href="form-data.html">form data</a></button>
+    <div class="signup">
+        <h2 class="signup-title">Sign up for beta</h2>
+        <p id="signup-success" class="text-success"></p>
+        <p id="signup-error" class="text-danger"></p>
+        <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
+            <input class="form-control" name="email" type="email" placeholder="Your email" required>
+            <button class="btn btn-success" id="signup-button" type="submit">Join now</button>
+        </form>
+    </div>
+    <script>
+        var signupForm = document.getElementById('signup-form');
+        var signupSuccess = document.getElementById('signup-success');
+        var signupError = document.getElementById('signup-error');
+        var signupBtn = document.getElementById('signup-button');
+        var onSignupComplete = function(error) {
+            signupBtn.disabled = false;
+            if (error) {
+                signupError.innerHTML = 'Sorry. Could not signup.';
+            } else {
+                signupSuccess.innerHTML = 'Thanks for signing up!';
+                // hide the form
+                signupForm.style.display = 'none';
+            }
+        };
+
+        function signup(formObj) {
+            // Store emails to firebase
+            var myFirebaseRef = new Firebase("https://formdata.firebaseio.com/formdata");
+            myFirebaseRef.push({
+                Text: formObj.email.value,
+            }, onSignupComplete);
+            signupBtn.disabled = true;
+            return false;
+        }
+
+    </script>
+
+    <div class="contact">
+        <h2 class="contact-title">Send us a message</h2>
+        <p id="contact-success" class="text-success lead"></p>
+        <p id="contact-error" class="text-danger lead"></p>
+        <form class="contact-form" id="contact-form" role="form" onsubmit="return sendMessage(this)">
+            <input class="form-control" name="name" type="text" placeholder="Your name. eg., Joe" required>
+            <input class="form-control" name="email" type="email" placeholder="Your email. eg., joe@acme.com" required>
+            <textarea class="form-control" name="message" placeholder="Your message for us" rows="5" required></textarea>
+            <br />
+            <button class="btn btn-success pull-right" id="send-button" type="submit">Send Message</button>
+        </form>
+    </div>
+    <script>
+        // Send message
+        var contactFrom = document.getElementById('contact-form');
+        var contactSuccess = document.getElementById('contact-success');
+        var contactError = document.getElementById('contact-error');
+        var sendBtn = document.getElementById('send-button');
+        var onMessageComplete = function(error) {
+            sendBtn.disabled = false;
+            if (error) {
+                contactError.innerHTML = 'Sorry. Could not send message.';
+            } else {
+                contactSuccess.innerHTML = "Message has been sent.";
+                // hide the form
+                contactFrom.style.display = 'none';
+            }
+        };
+
+        function sendMessage(formObj) {
+            // Store emails to firebase
+            var myFirebaseRef = new Firebase("https://formdata.firebaseio.com/messages");
+            myFirebaseRef.push({
+                name: formObj.name.value,
+                email: formObj.email.value,
+                message: formObj.message.value
+            }, onMessageComplete);
+            sendBtn.disabled = true;
+            return false;
+        }
+
+    </script>
+</body>
+
+</html>
