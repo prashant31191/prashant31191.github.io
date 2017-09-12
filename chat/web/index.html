@@ -69,6 +69,10 @@
         </button>
       </div>
     </div>
+	
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	
+	
   </header>
 
   <main class="mdl-layout__content mdl-color--grey-100">
@@ -130,7 +134,7 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="google-signin-client_id" content="223779128027-vgurbgpb0qri0fejnluibp2big17756n.apps.googleusercontent.com">
 
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
