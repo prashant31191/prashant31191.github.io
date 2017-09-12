@@ -39,6 +39,10 @@
   <!-- Tile icon for Win8 -->
   <meta name="msapplication-TileColor" content="#3372DF">
   <meta name="msapplication-navbutton-color" content="#303F9F">
+  
+  <!--for the google sign in button -->
+  <meta name="google-signin-client_id" content="223779128027-b1vlbfb9o7e8fp6jjc9ntbguhj0ud6tr.apps.googleusercontent.com">
+
 
   <!-- Material Design Lite -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -125,6 +129,37 @@
   };
   firebase.initializeApp(config);
 </script>
+
+
+<!--for the google sign in button -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<script>
+function onSignIn(googleUser) {
+console.log('User signed in.===000===');
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+
+<a href="#" onclick="signOut();">Sign out</a>
+<script>
+  function signOut() {
+   console.log('User signed out.===000===');
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+
+
+<!-- finish google -->
+
 
 
 
