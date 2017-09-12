@@ -7,9 +7,26 @@
 
 <body>
     <button class="button" type="button"><a href="index.html">submit data</a></button>
+	
+	
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDv5P9tJY5WqwTqtZsendUh9O-BW3kCCsI",
+    authDomain: "fb-database-d8fe8.firebaseapp.com",
+    databaseURL: "https://fb-database-d8fe8.firebaseio.com",
+    projectId: "fb-database-d8fe8",
+    storageBucket: "fb-database-d8fe8.appspot.com",
+    messagingSenderId: "35554896733"
+  };
+  firebase.initializeApp(config);
+</script>
+
     <script>
         // retrieve emails to firebase
-        var myFirebaseRef = new Firebase(firebase link goeas here);
+        //var myFirebaseRef = new Firebase(firebase link goeas here);
+        var myFirebaseRef = new Firebase(https://fb-database-d8fe8.firebaseio.com/formdata);
         myFirebaseRef.on('child_added', function(snapshot) {
             var formdata = snapshot.val();
             displayFormData(formdata.email);
