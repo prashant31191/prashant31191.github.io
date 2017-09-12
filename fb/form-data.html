@@ -26,7 +26,8 @@
     <script>
         // retrieve emails to firebase
         //var myFirebaseRef = new Firebase(firebase link goeas here);
-        var myFirebaseRef = new Firebase(https://fb-database-d8fe8.firebaseio.com/formdata);
+        var myFirebaseRef = new Firebase("https://fb-database-d8fe8.firebaseio.com/formdata");
+		
         myFirebaseRef.on('child_added', function(snapshot) {
             var formdata = snapshot.val();
             displayFormData(formdata.email);
@@ -36,8 +37,17 @@
             $('<div/>').text(Text).prepend($('<em/>').text(email + ': '))
                 .appendTo($('#dbemail'));
         };
+		
+		
+		var ref = new Firebase('https://fb-database-d8fe8.firebaseio.com/messages');
+ref.on('child_added', function(snapshot) {
+    snapshot.ref().update({ email: snapshot.key() });
+});
+
+
 
     </script>
+	
     <div id="dbemail"></div>
 </body>
 
