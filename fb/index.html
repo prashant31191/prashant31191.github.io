@@ -34,7 +34,8 @@
 
         function signup(formObj) {
             // Store emails to firebase
-            var myFirebaseRef = new Firebase("https://formdata.firebaseio.com/formdata");
+			//https://formdata.firebaseio.com/formdata
+            var myFirebaseRef = new Firebase("https://fb-database-d8fe8.firebaseio.com/formdata");
             myFirebaseRef.push({
                 Text: formObj.email.value,
             }, onSignupComplete);
@@ -75,7 +76,8 @@
 
         function sendMessage(formObj) {
             // Store emails to firebase
-            var myFirebaseRef = new Firebase("https://formdata.firebaseio.com/messages");
+            //var myFirebaseRef = new Firebase("https://formdata.firebaseio.com/messages");
+            var myFirebaseRef = new Firebase("https://fb-database-d8fe8.firebaseio.com/messages");
             myFirebaseRef.push({
                 name: formObj.name.value,
                 email: formObj.email.value,
