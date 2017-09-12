@@ -110,6 +110,24 @@
 <!-- Import and configure the Firebase SDK -->
 <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
 <!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+
+
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD4_oiOYYS9suBnMpSNpGHoKRGKOFj-dUw",
+    authDomain: "chat-333.firebaseapp.com",
+    databaseURL: "https://chat-333.firebaseio.com",
+    projectId: "chat-333",
+    storageBucket: "chat-333.appspot.com",
+    messagingSenderId: "223779128027"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
 <script src="/__/firebase/4.1.3/firebase.js"></script>
 <script src="/__/firebase/init.js"></script>
 
