@@ -63,3 +63,4 @@ E:\Prashant\Github_Demo\prashant31191.github.io>
 >>*QR code*
 >>https://github.com/prashant31191/prashant31191.github.io/blob/master/qrcode-ktube-v2-publish.png
 
+>>Stripe Payment
