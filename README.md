@@ -42,3 +42,10 @@ To https://github.com/prashant31191/prashant31191.github.io.git
 Branch master set up to track remote branch master from origin.
 
 E:\Prashant\Github_Demo\prashant31191.github.io>
+
+--Live Apps--
+1> --Ktube Videos app--
+![Scan Code](https://raw.github.com/prashant31191/prashant31191.github.io/master/qrcode-ktube-v2-publish.png)
+*Or*
+--clik here--
+https://github.com/prashant31191/prashant31191.github.io/blob/master/qrcode-ktube-v2-publish.png
