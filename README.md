@@ -57,5 +57,9 @@ E:\Prashant\Github_Demo\prashant31191.github.io>
 
 >>*Or*
 
->>--clik here--
+>>--clik here DOWNLOAD apk for andorid--
+>>*Apk file*
+>>https://github.com/prashant31191/prashant31191.github.io/blob/master/ktube-v2-app-release.apk
+>>*QR code*
 >>https://github.com/prashant31191/prashant31191.github.io/blob/master/qrcode-ktube-v2-publish.png
+
