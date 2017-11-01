@@ -7,39 +7,147 @@
       "image": "http://farm5.static.flickr.com/4500/24229750898_a867ca44de.jpg"
     },
     {
-      "id": "1",
+      "id": "2",
+      "name": "Featured",
+      "keyword": "Featured Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "3",
+      "name": "Love",
+      "keyword": "Love Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "4",
+      "name": "Vehicle",
+      "keyword": "Vehicle Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "5",
+      "name": "Landscape",
+      "keyword": "Landscape Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "6",
+      "name": "Design",
+      "keyword": "Design Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "7",
+      "name": "Abstract",
+      "keyword": "Abstract Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "8",
+      "name": "Space",
+      "keyword": "Space Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "9",
+      "name": "Animal",
+      "keyword": "Animal Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "9",
+      "name": "Text",
+      "keyword": "Text Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "10",
+      "name": "Mountain",
+      "keyword": "Mountain Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "11",
+      "name": "Blue",
+      "keyword": "Blue Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "12",
+      "name": "Sunset",
+      "keyword": "Sunset Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "13",
+      "name": "Tree",
+      "keyword": "Trees Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "14",
+      "name": "Water",
+      "keyword": "Water Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "15",
       "name": "Natural",
       "keyword": "Natural Wallpaper",
       "image": "xxxxx"
     },
     {
-      "id": "1",
-      "name": "Natural",
-      "keyword": "Natural Wallpaper",
+      "id": "16",
+      "name": "Sea",
+      "keyword": "Sea Wallpaper",
       "image": "xxxxx"
     },
     {
-      "id": "1",
-      "name": "Natural",
-      "keyword": "Natural Wallpaper",
+      "id": "17",
+      "name": "Food",
+      "keyword": "Food Wallpaper",
       "image": "xxxxx"
     },
     {
-      "id": "1",
-      "name": "Cool",
-      "keyword": "Natural Wallpaper",
+      "id": "18",
+      "name": "Snow",
+      "keyword": "Snow Wallpaper",
       "image": "xxxxx"
     },
     {
-      "id": "1",
-      "name": "Natural",
-      "keyword": "Natural Wallpaper",
+      "id": "19",
+      "name": "Flower",
+      "keyword": "Flower Wallpaper",
       "image": "xxxxx"
     },
     {
-      "id": "1",
-      "name": "Natural",
-      "keyword": "Natural Wallpaper",
+      "id": "20",
+      "name": "Entertainment",
+      "keyword": "Entertainment Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "21",
+      "name": "Sport",
+      "keyword": "Sport Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "22",
+      "name": "Clouds",
+      "keyword": "Clouds Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "23",
+      "name": "Festival",
+      "keyword": "Festival Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "24",
+      "name": "Other",
+      "keyword": "Other Wallpaper",
       "image": "xxxxx"
     }
   ],
