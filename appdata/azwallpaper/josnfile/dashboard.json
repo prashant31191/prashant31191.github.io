@@ -1,0 +1,52 @@
+{
+  "dashboard": [
+    {
+      "id": "1",
+      "name": "Natural",
+      "keyword": "Natural Wallapaper"
+    },
+    {
+      "id": "1",
+      "name": "Natural",
+      "keyword": "Natural Wallapaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "1",
+      "name": "Natural",
+      "keyword": "Natural Wallapaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "1",
+      "name": "Natural",
+      "keyword": "Natural Wallapaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "1",
+      "name": "Natural",
+      "keyword": "Natural Wallapaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "1",
+      "name": "Natural",
+      "keyword": "Natural Wallapaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "1",
+      "name": "Natural",
+      "keyword": "Natural Wallapaper",
+      "image": "xxxxx"
+    }
+  ],
+  "appdata": {
+    "version": "1.0",
+    "name": "3 wallpaper",
+    "link": "xxxx-app-link"
+  },
+  "message": "Sucess",
+  "code": 200
+}
