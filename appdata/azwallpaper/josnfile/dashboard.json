@@ -4,19 +4,19 @@
       "id": "1",
       "name": "Cool",
       "keyword": "Cool Wallpaper",
-      "image": "http://farm5.static.flickr.com/4500/24229750898_a867ca44de.jpg"
+      "image": "https://i.pinimg.com/originals/45/f3/59/45f359a8bf0a59173a4923f3fd32166e.jpg"
     },
     {
       "id": "2",
       "name": "Featured",
       "keyword": "Featured Wallpaper",
-      "image": "xxxxx"
+      "image": "http://img2.launcher.ksmobile.com/1215x1080/2016-12-08/275011_c62b76fd.jpg"
     },
     {
       "id": "3",
       "name": "Love",
       "keyword": "Love Wallpaper",
-      "image": "xxxxx"
+      "image": "http://img2.launcher.ksmobile.com/1215x1080/2016-12-08/275011_c62b76fd.jpg"
     },
     {
       "id": "4",
@@ -34,6 +34,12 @@
       "id": "6",
       "name": "Design",
       "keyword": "Design Wallpaper",
+      "image": "xxxxx"
+    },
+    {
+      "id": "6.1",
+      "name": "Girl",
+      "keyword": "Girl Wallpaper",
       "image": "xxxxx"
     },
     {
