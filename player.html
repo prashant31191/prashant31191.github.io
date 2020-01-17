@@ -1,0 +1,28 @@
+<html>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+
+
+<h3>LIVE VIDEO: NewsMax</h3>
+<video class="afterglow" id="my-video" width="400" height="225" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+
+
+<h3>LIVE VIDEO: NewsMax</h3>
+<video class="afterglow" id="livevideo" width="400" height="225" controls src="//nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8"></video>
+
+<script>
+if (Hls.isSupported()) {
+  var video = document.getElementById('livevideo');
+  var hls = new Hls();
+  //hls.loadSource('//video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+  hls.loadSource(video.src); // GC GET VIDEO SRC
+  hls.attachMedia(video);
+  hls.on(Hls.Events.MANIFEST_PARSED, function() {
+    //video.play();
+  });
+}
+</script>
+
+</html>
